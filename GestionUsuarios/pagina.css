@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    
+background: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    background: rgb(2,0,36);
+     background: #333;
+    color: #fffafa;
+    padding: 10px;
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin: 10px;
+}
+
+
+a {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #3d3f42;
+}
+
+
+h1 {
+    background: #333;
+    color: #fdfbfb;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0 10px 0;
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+li {
+    flex-basis: 45%;
+}
+
+
+#panel-control {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+ul a {
+    display: block;
+    padding: 10px;
+    color: #0a0a0a;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+ul a:hover {
+    background-color: #515152;
+}
+#aprobacion {
+    background-color: #ff9999;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ff6666;
+    color: #ffffff;
+}
+
+
+#informes-estadisticas {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#productos-pedidos {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#informe-ventas {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+#informe-ventas h2 {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    margin: -20px -20px 20px -20px;
+}
+
+#informe-ventas p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#informe-ventas a {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+#informe-ventas a:hover {
+   background: #333;
+}
+
+#estadisticas {
+    background-color: #99ff99;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #66cc66;
+    color: #333;
+}
+
+#agregar-producto-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+#agregar-producto-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+#agregar-producto-form input[type="text"],
+#agregar-producto-form input[type="number"],
+#agregar-producto-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#agregar-producto-form button {
+    background-color: #424242;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#agregar-producto-form button:hover {
+    background-color: #676768;
+}
+footer a {
+    display: block;
+    background: #f7f5f5;
+    color: #070707;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px auto; 
+    text-align: center;
+    text-decoration: none;
+    width: fit-content;
+}
+footer a:hover {
+    background-color: #a9a9ac;
+}
