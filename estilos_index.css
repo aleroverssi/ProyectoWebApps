@@ -1,105 +1,114 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #333;
-    display: flex;
-   
-    
-    height: 100vh;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
 }
 
+header {
+  background-color: #fff;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.barra-busqueda {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto; /* Para centrar la barra de búsqueda */
+  padding: 10px 0;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+input {
+  width: 100%; /* Ocupa el ancho restante */
+  height: 30px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+input:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.simbolos {
+  display: flex;
+  align-items: center;
+}
+
+
+.material-symbols-outlined {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+
 .form-register {
-    width: 400px;
-    background: grey;
-    padding: 30px;
-    border-radius: 4px;
-    font-family: 'calibri';
-    color: white;
-    box-shadow: 7px 13px 37px black; 
+  width: 400px;
+  background: grey;
+  padding: 30px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  color: white;
+  box-shadow: 7px 13px 37px black;
+  margin-top: 150px;
 }
 
 .form-register h4 {
-    font-size: 20px;
-    margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .controls {
-    width: 100%;
-    background: #24303c;
-    padding: 18px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #333;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white; /* Agregué este estilo para el texto dentro de los controles */
+  width: 100%;
+  background: #24303c;
+  padding: 18px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #333;
+  font-family: 'calibri';
+  font-size: 18px;
+  color: white;
 }
 
 .controls.error {
-    border: 2px solid red;
+  border: 2px solid red;
 }
 
 .form-register a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .form-register a:hover {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
 .form-register .botons {
-    width: 100%;
-    background: #fdfdff; 
-    border: none;
-    padding: 12px;
-    color: rgb(0, 0, 0);
-    margin: 16px 0;
-    font-size: 16px;
-    cursor: pointer; 
+  width: 100%;
+  background: #fdfdff;
+  border: none;
+  padding: 12px;
+  color: rgb(0, 0, 0);
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
 }
-.barra-busqueda {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
- 
-  h1 {
-    font-size: 20px;
-    margin-bottom: 10px;
-  }
- 
-  input {
-    width: 300px;
-    height: 30px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    font-size: 16px;
-    color: #333;
-  }
- 
-  input:focus {
-    border-color: #000;
-    outline: none;
-  }
- 
-  span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    font-size: 16px;
-  }
-  header {
-    background-color: #fff;
-    height: 60px;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-  }
