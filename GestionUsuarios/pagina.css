@@ -1,18 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    
-background: #333;
+    background: rgb(34, 34, 34);
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 
-h1, h2 {
-    background: rgb(2,0,36);
-     background: #333;
-    color: #fffafa;
+h2 {
+    background: none;
+    color: rgb(255, 253, 253);
     padding: 10px;
     margin: 20px 0 10px 0;
     text-align: center;
+    margin-top: 100px;
 }
 
 ul {
@@ -28,32 +28,34 @@ li {
 
 a {
     display: inline-block;
-    background-color: #ffffff;
-    color: #fff;
+    background-color: rgb(217, 217, 217);
+    color: rgb(255,253,253);
     padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
+    margin: 10px 0;
 }
 
 a:hover {
-    background-color: #3d3f42;
+    background-color: rgb(34, 34, 34);
 }
 
 
 h1 {
-    background: #333;
-    color: #fdfbfb;
+    background: none;
+    color: rgb(255, 253, 253);
     padding: 10px;
     text-align: center;
     margin: 20px 0 10px 0;
+    font-size: 25px;
 }
 
 p {
     text-align: center;
     padding: 10px;
-    color: white;
+    color: rgb(255,253,253);
 }
 
 
@@ -77,20 +79,21 @@ li {
 ul a {
     display: block;
     padding: 10px;
-    color: #0a0a0a;
+    color: rgb(30,30,30);
     text-decoration: none;
     transition: background-color 0.3s;
 }
 
 ul a:hover {
-    background-color: #515152;
+    background-color: rgb(80,80,80);
 }
+
 #aprobacion {
-    background-color: #ff9999;
+    background-color: rgb(231, 154, 154);
     padding: 20px;
     margin: 10px;
-    border: 1px solid #ff6666;
-    color: #ffffff;
+    border: 1px solid rgb(235, 94, 94);
+    color: rgb(255,253,253);
 }
 
 
@@ -107,17 +110,18 @@ ul a:hover {
 
 
 #informe-ventas {
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: rgb(255,253,253);
+    border: 1px solid rgb(34,34,34);
     border-radius: 5px;
     padding: 20px;
     margin: 20px;
     text-align: center;
+    margin-top: 100px;
 }
 
 #informe-ventas h2 {
-    background: #333;
-    color: #fff;
+    background: rgb(46, 44, 44);
+    color: rgb(255,253,253);
     padding: 10px;
     margin: -20px -20px 20px -20px;
 }
@@ -125,12 +129,13 @@ ul a:hover {
 #informe-ventas p {
     font-size: 18px;
     margin-top: 10px;
+    color: rgb(30,30,30);
 }
 
 #informe-ventas a {
     display: inline-block;
-    background: #333;
-    color: #fff;
+    background: rgb(34,34,34);
+    color: rgb(255,253,253);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -140,31 +145,34 @@ ul a:hover {
 }
 
 #informe-ventas a:hover {
-   background: #333;
+    background: rgb(34,34,34);
 }
 
 #estadisticas {
-    background-color: #99ff99;
+    background-color: rgb(37,211,102);
     padding: 20px;
     margin: 10px;
-    border: 1px solid #66cc66;
-    color: #333;
+    border: 1px solid rgb(37,211,102);
+    color: rgb(34,34,34);
 }
 
 #agregar-producto-form {
     max-width: 400px;
     margin: 0 auto;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: rgb(80, 80, 80);
+    border: none;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
+    margin-top: 100px;
 }
 
 #agregar-producto-form label {
     font-weight: bold;
     display: block;
     margin-top: 10px;
+    color: rgb(255,253,253);
 }
 
 #agregar-producto-form input[type="text"],
@@ -173,13 +181,14 @@ ul a:hover {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(80, 80, 80);
     border-radius: 5px;
+    background-color: rgb(217, 217, 217);
 }
 
 #agregar-producto-form button {
-    background-color: #424242;
-    color: #fff;
+    background-color: rgb(217, 217, 217);
+    color: rgb(30, 30, 30);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -188,21 +197,82 @@ ul a:hover {
 }
 
 #agregar-producto-form button:hover {
-    background-color: #676768;
+    background-color: rgb(217,217,217);
 }
+
 footer a {
     display: block;
-    background: #f7f5f5;
-    color: #070707;
+    background: rgb(217, 217, 217);
+    color: rgb(30, 30, 30);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 10px auto; 
+    margin: 10px auto;
     text-align: center;
     text-decoration: none;
     width: fit-content;
 }
+
 footer a:hover {
-    background-color: #a9a9ac;
+    background-color: rgb(217,217,217);
+}
+
+header {
+    background: rgb(34, 34, 34);
+    padding: 10px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.barra-busqueda {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px 20px;
+    background: rgb(34, 34, 34);
+    color: rgb(255, 253, 253);
+    padding: 10px;
+}
+
+
+.barra-busqueda input[type="search"] {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.h13 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(217, 217, 217);
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+}
+
+input:focus {
+    border-color: rgb(30, 30, 30);
+    outline: none;
+}
+
+.simbolos {
+    display: flex;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+h3 {
+    color: rgb(255, 253, 253);
 }

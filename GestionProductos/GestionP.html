@@ -2,15 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Gestión de Productos</title>
 </head>
 <body>
-
+    <header>
+        <div class="barra-busqueda">
+          <h1 class="h13">GuruTech</h1>
+          <input type="search" placeholder="Buscar">
+          <div class="simbolos">
+            <span class="material-symbols-outlined">
+              account_circle
+            </span>
+            <span class="material-symbols-outlined">
+              shopping_cart
+            </span>
+          </div>
+        </div>
+    </header>
+    
 <h1>Gestión de Productos</h1>
 
 <!-- Formulario para agregar productos -->
-<form id="agregarForm">
-    <h2>Agregar Producto</h2>
+<div class="contenedor">
+<form class="formulario" id="agregarForm">
     <label for="nombre">Nombre del Producto:</label>
     <input type="text" id="nombre" required>
 
@@ -42,14 +58,16 @@
     <label for="imagen">Subir Imagen:</label>
     <input type="file" id="imagen" accept="image/*">
 
-    <button type="button" onclick="agregarProducto()">Agregar Producto</button>
+    <button type="button" id="button" onclick="agregarProducto()">Agregar Producto</button>
 </form>
-
 <!-- Lista de productos -->
 <h2>Lista de Productos</h2>
 <ul id="listaProductos">
     <!-- Los productos se mostrarán aquí -->
 </ul>
+</div>
+
+
 
 <script>
     // Lista simulada de productos

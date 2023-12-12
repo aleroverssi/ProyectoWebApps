@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #333;
+  background: rgb(34,34,34);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,9 +14,9 @@ body {
 }
 
 header {
-  background-color: #fff;
+  background: rgb(34,34,34);
   padding: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgb(217,217,217);
   width: 100%;
   box-sizing: border-box;
 }
@@ -28,23 +28,30 @@ header {
   align-items: center;
   margin: 0 auto; /* Para centrar la barra de búsqueda */
   padding: 10px 0;
+  background: rgb(34,34,34);
+  color: rgb(255,253,253);
 }
 
-h1 {
+.h13 {
   font-size: 20px;
+  padding: 10px;
 }
 
 input {
   width: 100%; /* Ocupa el ancho restante */
   height: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(34,34,34);
   padding: 10px;
   font-size: 16px;
-  color: #333;
+  background-color: rgb(217,217,217);
+  color: rgb(30,30,30);
+  border-radius: 10px;
+  text-align: center;
+  line-height: 0;
 }
 
 input:focus {
-  border-color: #000;
+  border-color: rgb(30,30,30);
   outline: none;
 }
 
@@ -62,17 +69,17 @@ input:focus {
 
 .form-login {
   width: 400px;
-  background: grey;
-  box-shadow: 7px 13px 37px #525151;
+  background: rgb(80,80,80);
+  box-shadow: 7px 13px 37px rgb(80,80,80);
   padding: 20px 30px;
-  border-top: 4px solid #525151;
-  color: white;
+  border-top: 4px solid rgb(80,80,80);
+  color: rgb(255,253,253);
   border-radius: 15px;
   margin-top: 10%;
 }
 
 .form-login h5 {
-  background: grey;
+  background: none;
   margin: 0;
   text-align: center;
   height: 40px;
@@ -82,15 +89,16 @@ input:focus {
 }
 
 .form-login p {
-  background: grey;
+  background: none;
   height: 40px;
   text-align: center;
   border-bottom: 1px solid;
+  margin-top: 20px;
 }
 
 .form-login a {
   background: none;
-  color: white;
+  color: rgb(255,253,253);
   text-decoration: none;
   font-size: 14px;
 }
@@ -101,17 +109,18 @@ input:focus {
 
 .controls {
   width: 100%;
-  background: #24303c;
+  background: rgb(217,217,217);
   padding: 18px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid #1f53c5;
+  border: 1px solid rgb(34,34,34);
   font-family: 'calibri';
   font-size: 18px;
+  border-radius: 10px;
 }
 
 .controls.error {
-  border: 2px solid red;
+  border: 2px solid rgb(255,0,0);
 }
 
  

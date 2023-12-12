@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* Ajuste: Cambiar la dirección del contenedor principal a columna */
+    background-color: rgb(34,34,34);
+    color: rgb(255,253,253);
+}
+
+
+header {
+    background: rgb(34, 34, 34);
+    padding: 10px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.barra-busqueda {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 20px; /* Ajuste: Eliminar la regla de padding duplicada */
+    background: rgb(34, 34, 34);
+    color: rgb(255, 253, 253);
+}
+
+.barra-busqueda input[type="search"] {
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.h13 {
+    font-size: 20px;
+    padding: 10px;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(217, 217, 217);
+    padding: 10px;
+    font-size: 16px;
+    color: rgb(80, 80, 80);
+}
+
+input:focus {
+    border-color: rgb(30, 30, 30);
+    outline: none;
+}
+
+.simbolos {
+    display: flex;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.contenedor {
+    overflow: hidden; /* Establece un contexto de bloque para los elementos flotados */
+  }
+
+  h1{
+    margin-left: 13%;
+  }
+  
+  .formulario {
+    float: left;
+    width: 30%; /* Puedes ajustar este valor según tus necesidades */
+    margin-left: 10%;
+    color: rgb(255,253,253);
+    background-color: rgb(80,80,80);
+    border: rgb(34,34,34);
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  
+
+
+  /* Estilos para los campos de entrada del formulario */
+.formulario label,
+.formulario input,
+.formulario textarea,
+.formulario select {
+  display: block; /* Muestra cada elemento en una línea */
+  margin-bottom: 10px; /* Agrega espacio entre cada elemento */
+  margin-left: 10%;
+  margin-top: 10px;
+  margin-right: auto;
+}
+
+.formulario input[type="text"],
+.formulario textarea,
+.formulario select {
+  width: 200px; /* Puedes ajustar este valor según tus necesidades */
+  padding: 8px; /* Añade relleno para mejorar la apariencia */
+  box-sizing: border-box; /* Incluye el relleno y el borde en el ancho total */
+  background-color: rgb(217,217,217);
+  margin-left: 30%;
+}
+
+.formulario input[type="number"] {
+  width: auto;
+  background-color: rgb(217,217,217);
+  margin-left: 30%;
+}
+
+.formulario input[type="file"], input [type="checkbox"]{
+    background-color: rgb(217,217,217);
+    width: auto;
+}
+
+button{
+    background-color: rgb(217,217,217);
+    border-radius: 10px;
+    width: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+  
+
+#listaProductos, h2 {
+    float: right;
+    width: 50%;
+    margin-left: 1%; /* Puedes ajustar este valor según tus necesidades */
+
+  }
