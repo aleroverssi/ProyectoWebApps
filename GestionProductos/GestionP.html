@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Productos</title>
+</head>
+<body>
+
+<h1>Gestión de Productos</h1>
+
+<!-- Formulario para agregar productos -->
+<form id="agregarForm">
+    <h2>Agregar Producto</h2>
+    <label for="nombre">Nombre del Producto:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="categoria">Categoria:</label>
+    <select id="categoria">
+        <option value="perifericos">Perifericos</option>
+        <option value="componentes">Componentes</option>
+        <option value="celulares">Celulares</option>
+    </select>
+
+    <label for="etiquetas">Etiquetas:</label> <!-- Separar etiquetas con comas (,) -->
+    <input type="text" id="etiquetas">
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" required></textarea>
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" required>
+
+    <label for="disponibilidad">Disponibilidad:</label>
+    <input type="checkbox" id="disponibilidad">
+
+    <label for="envio">Opciones de Envío:</label>
+    <select id="envio">
+        <option value="normal">Correos de Costa Rica</option>
+        <option value="express">Envio rapido</option>
+    </select>
+
+    <label for="imagen">Subir Imagen:</label>
+    <input type="file" id="imagen" accept="image/*">
+
+    <button type="button" onclick="agregarProducto()">Agregar Producto</button>
+</form>
+
+<!-- Lista de productos -->
+<h2>Lista de Productos</h2>
+<ul id="listaProductos">
+    <!-- Los productos se mostrarán aquí -->
+</ul>
+
+<script>
+    // Lista simulada de productos
+    var productos = [];
+
+    // Función para agregar un producto
+    function agregarProducto() {
+        // Obtener los valores del formulario
+        var nombre = document.getElementById("nombre").value;
+        var categoria = document.getElementById("categoria").value;
+        var etiquetas = document.getElementById("etiquetas").value.split(",");
+        var descripcion = document.getElementById("descripcion").value;
+        var precio = document.getElementById("precio").value;
+        var disponibilidad = document.getElementById("disponibilidad").checked;
+        var envio = document.getElementById("envio").value;
+        var imagen = document.getElementById("imagen").value; // Aquí se debe manejar la subida de imágenes
+
+        // enviar datos al servidor para su procesamiento y almacenamiento en la base de datos
+
+        // Crear un objeto de producto
+        var nuevoProducto = {
+            nombre: nombre,
+            categoria: categoria,
+            etiquetas: etiquetas,
+            descripcion: descripcion,
+            precio: precio,
+            disponibilidad: disponibilidad,
+            envio: envio,
+            imagen: imagen // manejar la subida de imágenes
+        };
+
+        /// Agregar el nuevo producto a la lista
+        productos.push(nuevoProducto);
+
+        // Luego, actualizar la lista de productos
+        actualizarListaProductos();
+    }
+
+    // Función para actualizar la lista de productos
+    function actualizarListaProductos() {
+        var listaProductos = document.getElementById("listaProductos");
+        listaProductos.innerHTML = "";
+
+        productos.forEach(function (producto) {
+            var li = document.createElement("li");
+            li.textContent = `${producto.nombre} - ${producto.categoria} - ₡${producto.precio} - Disponible: ${producto.disponibilidad ? 'Sí' : 'No'} - ${producto.envio}`;
+            listaProductos.appendChild(li);
+        });
+    }
+    // Actualizar la lista de productos al cargar la página
+    actualizarListaProductos();
+</script>
+
+</body>
+</html>
